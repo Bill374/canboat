@@ -2755,6 +2755,18 @@ Pgn pgnList[] = {
      {{"SID", BYTES(1), 1, false, 0, ""}, {"Rate", BYTES(4), RES_HIRES_ROTATION, true, "rad/s", ""}, {0}}}
 
     ,
+    {"Heave",
+     127252,
+     PACKET_COMPLETE,
+     PACKET_SINGLE,
+     5,
+     0,
+     {{"SID", BYTES(1), 1, false, 0, ""},
+      {"Heave", BYTES(2), 0.1, true, "ft", ""},
+      {"Delay", BYTES(1), 1, false, 0, ""},
+      {"Delay Source", BYTES(1), 1, false, 0, ""},
+      {0}}},
+
     {"Attitude",
      127257,
      PACKET_COMPLETE,
